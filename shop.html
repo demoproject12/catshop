@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link href="style11.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+   <title>Shop</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+   <style>
+   .bg
+   {
+		background-color:#FFEBCD;
+   }
+   body
+   {
+		font-family: "Lato", sans-serif;
+   }
+   h1, h2, h3, h4, h5, h6 
+   {
+  font-family: "Playfair Display";
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .card-wrapper {
+  margin-bottom: 30px;
+}
+.card-image .card .card-img-wrapper {
+  height: 100%;
+}
+.card-image .card .card-body {
+  display: none;
+}
+.card-image-title-description .card .card-img-wrapper {
+  max-height: 160px;
+}
+.card-image-title-description .card {
+  position: relative;
+  min-height: 300px;
+}
+.card-image-title-description .card .card-body {
+  height: auto;
+  position: relative;
+  top: 0;
+  margin-bottom: -70px;
+}
+.card-image-title-description .card:hover .card-body {
+  top: -70px;
+}
+.card-image-title-description .card .card-body .card-title {
+  margin-bottom: .75rem;
+}
+.card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  height: 100%;
+}
+.card:hover {
+  box-shadow: 8px 12px 31px -10px #ab98ab;
+}
+.card-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  overflow: hidden;
+}
+.card-img-wrapper img {
+  transition: 1.5s ease;
+}
+.card:hover .card-img-wrapper img {
+  transform: scale(1.15);
+}
+.card-body .card-title {
+  margin-bottom: calc(50% + 20px);
+  transition: 1.5s ease;
+}
+.card:hover .card-body .card-title {
+  margin-bottom: .75rem;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-color: #fff;
+  transition: 1.5s ease;
+}
+.card-content {
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  transition: 1.5s ease;
+}
+.card:hover .card-body {
+  height: 80%;
+}
+.card:hover .card-content {
+  bottom: 0;
+}
+body {
+  margin: 0;
+  background-image: linear-gradient(to right, #ECE9E6 , #FFFFFF);
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+
+	
+	.contact{
+			padding: 5%;		  
+box-shadow: 5px 10px 8px #888888;
+		
+	}
+	.col-md-3{
+		    background-color: #DEB887;
+
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+	.contact-info{
+		margin-top:10%;
+	}
+	.contact-info img{
+		margin-bottom: 15%;
+	}
+	.contact-info h2{
+		margin-bottom: 10%;
+	}
+	.col-md-9{
+		
+		padding: 3%;
+		
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+	.contact-form label{
+		font-weight:600;
+	}
+	.contact-form button{
+		background: #25274d;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+	}
+   
+   
+ 
+    
+   
+   </style>
+   
+  </head>
+<body>
+  
+ 
+ 
+ 
+ 
+ 
+	
+	 
+ 
+<!-- Navbar (sit on top) -->
+<div class="w3-top1"   style="box-shadow: 5px 10px 8px #888888;">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button"> <img src="logo.png" alt="" width="30" height="24"> happy paws </a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right">
+	<a href="home.html" target="_blank" class="w3-bar-item w3-button">Home</a>
+      <a href="about.html" target="_blank" class="w3-bar-item w3-button">About</a>
+      <a href="shop.html" target="_blank" class="w3-bar-item w3-button">shop</a>
+      <a href="contact.html" target="_blank" class="w3-bar-item w3-button">Contact</a>
+      <a href="petproduct.html" target="_blank" class="w3-bar-item w3-button">Pet Product</a>
+	   <a href="buy.html" target="_blank" class="w3-bar-item w3-button">Buy Now</a>
+	  
+    </div>
+  </div>
+</div>
+ 
+ 
+ 
+  <script>
+  AOS.init();
+</script>
+
+
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container">
+  <div class="row mt-4" data-aos="fade-right">
+
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="shop1.jfif" alt="Card image cap" height="200px" width="100px">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Munchkin cat</h5>
+          <p class="card-text">Munchkin cats are short on legs and big on personality. Learn more about this incredibly cute one-of-a-kind cat breed.</p>
+          <a href="product.html" class="btn btn-primary">View In detail</a>
+        </div>
+      </div>
+    </div>
+    
+ 
+ 
+	
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="shop2.jpg" alt="Card image cap" height="200px" width="100px">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">British Shorthair cat</h5>
+          <p class="card-text">Munchkin cats are short on legs and big on personality. Learn more about this incredibly cute one-of-a-kind cat breed.</p>
+          <a href="product1.html" class="btn btn-primary">View In detail</a>
+        </div>
+      </div>
+    </div>
+	
+	    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="shop3.jpg" alt="Card image cap" height="200px" width="100px">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Scottish Folds cat</h5>
+          <p class="card-text">Munchkin cats are short on legs and big on personality. Learn more about this incredibly cute one-of-a-kind cat breed.</p>
+          <a href="#" class="btn btn-primary">View In detail </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row mt-4" data-aos="fade-left">
+
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="shop4.jpg" alt="Card image cap" height="200px" width="100px">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Bichon Frises Dog</h5>
+          <p class="card-text">Once bred to be the stars in circuses and travelling shows, Bichon Frises are cheerful, intelligent and relish being the centre of attention</p>
+          <a href="#" class="btn btn-primary">View In detail </a>
+        </div>
+      </div>
+    </div>
+    
+ 
+ 
+	
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="shop5.jpg" alt="Card image cap" height="200px" width="100px">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Siberian Husky dog </h5>
+          <p class="card-text">Munchkin cats are short on legs and big on personality. Learn more about this incredibly cute one-of-a-kind cat breed.</p>
+          <a href="#" class="btn btn-primary">View In detail </a>
+        </div>
+      </div>
+    </div>
+	
+	    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="shop6.jpg" alt="Card image cap" height="200px" width="100px">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Pug Puppies</h5>
+          <p class="card-text">Munchkin cats are short on legs and big on personality. Learn more about this incredibly cute one-of-a-kind cat breed.</p>
+          <a href="#" class="btn btn-primary">View In detail </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row mt-4" data-aos="fade-right">
+
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="shop7.jpg" alt="Card image cap" height="200px" width="100px">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cuckoo birds</h5>
+          <p class="card-text">Cuckoos are birds in the Cuculidae travelling shows, Bichon Frises are cheerful, intelligent and relish being the centre of attention</p>
+          <a href="#" class="btn btn-primary">View In detail </a>
+        </div>
+      </div>
+    </div>
+    
+ 
+ 
+	
+    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="shop8.jpg" alt="Card image cap" height="200px" width="100px">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">pigon bird </h5>
+          <p class="card-text">Pigeons occur worldwide except in the coldest regions and the most remote islands ersonality. Learn more about this incredibl cute one-of-a-kind cat breed.</p>
+          <a href="#" class="btn btn-primary">View In detail</a>
+        </div>
+      </div>
+    </div>
+	
+	    <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+      <div class="card">
+        <div class="card-img-wrapper">
+          <img class="card-img-top" src="shop9.jfif" alt="Card image cap" height="200px" width="100px">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">duck bird</h5>
+          <p class="card-text">Munchkin cats are short on legs and big on personality. Learn more about this incredibly cute one-of-a-kind cat breed.</p>
+          <a href="#" class="btn btn-primary">View In detail </a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<footer class="footer pb-3">
+  <div class="footer__addr">
+    <h1 class="footer__logo">HAPPY PAWS</h1>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      5534 Somewhere In. The World 22193-10212<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title" >ABOUT US</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="https:www.gmail.com">happypaws@gmail.com</a>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+        </li>
+            
+        <li>
+          <a href="#">+91 9820392542 </a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">MEDIA LINKS</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="https:www.facebook.com">Facebook</a>
+        </li>
+        
+        <li>
+          <a href="https:www.linkedin.com">LinkedIn</a>
+        </li>
+        
+        <li>
+          <a href="https:www.instagram.com">Instagram</a>
+        </li>
+        
+        <li>
+          <a href="https:www.whatsapp.com">WhatsApp</a>
+        </li>
+      
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">LEGAL</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        
+        <li>
+          <a href="#">Terms of Use</a>
+        </li>
+        
+        <li>
+          <a href="#">Sitemap</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2022 Something. All rights reserved.</p>
+    
+    <div class="legal__links">
+      <span>Made with <span class="heart">â™¥</span> remotely from Anywhere</span>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
